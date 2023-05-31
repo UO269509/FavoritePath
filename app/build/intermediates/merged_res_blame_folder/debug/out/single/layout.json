@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\linear_recycler_view_share.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\linear_recycler_view_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\linear_recycler_view_ruta.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\linear_recycler_view_ruta.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_inicio.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\fragment_inicio.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ayuda.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\fragment_ayuda.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_amigos.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\fragment_amigos.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_solicitudes.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\fragment_solicitudes.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ruta.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\activity_ruta.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\linear_recycler_view_solicitud.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\linear_recycler_view_solicitud.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\linear_recycler_view_amigo.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\linear_recycler_view_amigo.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\linear_recycler_view_coleccion.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\linear_recycler_view_coleccion.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_perfil.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\fragment_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_share.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\activity_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_colecciones.xml",
+        "source": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\src\\main\\res\\layout\\fragment_colecciones.xml"
+    }
+]

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imagenPerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/img_header"
+        android:src="@mipmap/ic_logo" />
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/nombre"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/descripcionUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="center"
+        android:text="@string/hintDescripcion"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/logOutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botones"
+        android:onClick="logOut"
+        android:text="@string/menu_logout" />
+
+</LinearLayout>

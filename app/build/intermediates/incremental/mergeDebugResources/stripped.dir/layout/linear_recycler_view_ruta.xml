@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shape"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_xlarge">
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nombreLabel"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/descripcionLabel"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hintDescripcion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagenBorrar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="boton de borrado"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ic_delete" />
+
+</LinearLayout>

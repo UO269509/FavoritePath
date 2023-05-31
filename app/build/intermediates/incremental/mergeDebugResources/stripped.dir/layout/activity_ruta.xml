@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.RutaActivity">
+
+    <EditText
+        android:id="@+id/tituloTexto"
+        android:layout_width="159dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="@string/hintTitulo"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/descripcionTexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/descripcionTexto"
+        android:layout_width="280dp"
+        android:layout_height="103dp"
+        android:ems="10"
+        android:hint="@string/hintDescripcion"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButton"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:contentDescription="@string/guardar"
+        android:focusable="true"
+        android:tint="@color/black"
+        app:backgroundTint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/ic_save" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPublica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:text="Ruta Pública"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxCircular"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionTexto" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="72dp"
+        android:text="Ruta Circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionTexto" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="111dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Imagenes"
+        android:background="@drawable/viewpager_border"
+        app:layout_constraintEnd_toStartOf="@+id/addImageButton"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPublica" />
+
+    <Button
+        android:id="@+id/addImageButton"
+        android:layout_width="124dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+        android:text="Agregar imágenes"
+        android:backgroundTint="@color/botones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCircular" />
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="353dp"
+        android:layout_height="240dp"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintHorizontal_bias="0.275"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toBottomOf="@+id/viewPager"
+        mapbox:layout_constraintVertical_bias="0.141" />
+
+    <Button
+        android:id="@+id/initRutaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/botones"
+        android:clickable="false"
+        android:text="Iniciar Ruta..."
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toStartOf="@+id/saveButton"
+        mapbox:layout_constraintHorizontal_bias="0.147"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toBottomOf="@+id/mapView"
+        mapbox:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="maps_compass_directions">
+        <item>"Пн"</item>
+        <item>"ПнС"</item>
+        <item>"Сх"</item>
+        <item>"ПдС"</item>
+        <item>"Пд"</item>
+        <item>"ПдЗ"</item>
+        <item>"Зх"</item>
+        <item>"ПнЗ"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"північ"</item>
+        <item>"північний схід"</item>
+        <item>"схід"</item>
+        <item>"південний схід"</item>
+        <item>"південь"</item>
+        <item>"південний захід"</item>
+        <item>"захід"</item>
+        <item>"північний захід"</item>
+    </string-array>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d нове сповіщення</item>
+    <item quantity="few">%d нові сповіщення</item>
+    <item quantity="many">%d нових сповіщень</item>
+    <item quantity="other">%d нового сповіщення</item>
+  </plurals>
+    <plurals name="numberOfDays">
+        <item quantity="one">день</item>
+        <item quantity="few">дні</item>
+        <item quantity="many">днів</item>
+        <item quantity="other">днів</item>
+    </plurals>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"© Google, <ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g>. Зображення: © <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, <ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g>. Картографічні дані: © <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>, <ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g>."</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"© Google, <ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g>."</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"© Google, <ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g>. Зображення: © <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, <ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g>."</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"© Google, <ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g>. Картографічні дані: © <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>, <ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g>."</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Перейти на головну"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Перейти вгору"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Більше опцій"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Показати всі"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Вибрати програму"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ЗНИЖКА"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"УВІМК."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"пробіл"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Введіть пошуковий запит…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Очистити запит"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Пошуковий запит"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Пошук"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Наіслати запит"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Голосовий пошук"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Поділитися:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Поділитися через додаток <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Згорнути"</string>
+    <string name="bottomsheet_action_expand_halfway">Розгорнути нижню половину</string>
+    <string name="channel_name">Навігаційні повідомлення</string>
+    <string name="character_counter_content_description">Введено символів: %1$d з %2$d</string>
+    <string name="character_counter_overflowed_content_description">Перевищено ліміт символів: %1$d з %2$d</string>
+    <string name="clear_text_end_icon_content_description">Видалити текст</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Увімкнути</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Додаток %1$s не працюватиме, якщо не ввімкнути сервіси Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Увімкнути сервіси Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Установити</string>
+    <string name="common_google_play_services_install_text">Додаток %1$s не працюватиме без сервісів Google Play, яких немає на вашому пристрої.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Установити сервіси Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Доступність сервісів Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Помилка сервісів Google Play</string>
+    <string name="common_google_play_services_unknown_issue">У додатку %1$s виникла проблема із сервісами Google Play. Повторіть спробу.</string>
+    <string name="common_google_play_services_unsupported_text">Додаток %1$s не працюватиме без сервісів Google Play, які не підтримуються на вашому пристрої.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Оновити</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Додаток %1$s не працюватиме, якщо не оновити сервіси Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Оновіть сервіси Google Play</string>
+    <string name="common_google_play_services_updating_text">Додаток %1$s не працюватиме без сервісів Google Play, які зараз оновлюються.</string>
+    <string name="common_google_play_services_wear_update_text">Потрібна нова версія сервісів Google Play. Вони невдовзі оновляться.</string>
+    <string name="common_open_on_phone">Відкрити на телефоні</string>
+    <string name="common_signin_button_text">Увійти</string>
+    <string name="common_signin_button_text_long">Увійти в облік. запис Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Посилання скопійовано в буфер обміну"</string>
+    <string name="dropoff_dialog_negative_text">Скасувати</string>
+    <string name="dropoff_dialog_positive_text">Розпочати наступний</string>
+    <string name="dropoff_dialog_text">Бажаєте продовжити подорож до наступного пункту призначення?</string>
+    <string name="end_navigation">Закінчити навігацію</string>
+    <string name="error_icon_content_description">Помилка</string>
+    <string name="eta_format">До прибуття %s</string>
+    <string name="exposed_dropdown_menu_content_description">Показати спадне меню</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копіювати посилання"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Відкрити у веб-переглядачі"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Надіслати посилання"</string>
+    <string name="feedback_bad_route">Не ефективний\n
+або поганий маршрут</string>
+    <string name="feedback_confusing_instruction">Незрозумілі\nінструкції</string>
+    <string name="feedback_missing_exit">Відсутній\nвиїзд</string>
+    <string name="feedback_missing_road">Дорога\nвідсутня</string>
+    <string name="feedback_not_allowed">Заборонено</string>
+    <string name="feedback_road_closure">Дорогу\nперекрито</string>
+    <string name="feedback_submitted">Відгук надіслано</string>
+    <string name="feet">фт</string>
+    <string name="hr">год</string>
+    <string name="icon_content_description">Значок вікна</string>
+    <string name="item_view_role_description">Вкладка</string>
+    <string name="kilometers">км</string>
+    <string name="mapbox_attributionErrorNoBrowser">Веб-оглядач відсутній на цьому пристрої, неможливо відкрити веб-сторінку</string>
+    <string name="mapbox_attributionTelemetryMessage">Ви допомагаєте робити мапи OpenStreetMap та Mapbox краще пощирюючи анонімні дані про користування мапами.</string>
+    <string name="mapbox_attributionTelemetryNegative">Не погоджуюсь</string>
+    <string name="mapbox_attributionTelemetryNeutral">Додаткова інформація</string>
+    <string name="mapbox_attributionTelemetryPositive">Погоджуюсь</string>
+    <string name="mapbox_attributionTelemetryTitle">Допоможіть зробити мапи Mapbox краще</string>
+    <string name="mapbox_attributionsDialogTitle">Mapbox Maps SDK для Android</string>
+    <string name="mapbox_attributionsIconContentDescription">Значок атрибуції. Натисніть, щоб показати діалог атрибуції.</string>
+    <string name="mapbox_compassContentDescription">Компас. Натисніть щоб зорієнтувати мапу на північ.</string>
+    <string name="mapbox_mapActionDescription">Показує мапи створені за допомоги Mapbox. Пересувайте мапу двома пальцями. Змінюйте масштаб стуляючи/розводячи два пальці.</string>
+    <string name="mapbox_myLocationViewContentDescription">Визначення положення. Показує ваше місцеположення на мапі.</string>
+    <string name="mapbox_offline_error_region_definition_invalid">Межі ділянки для оффлайнового користування даними за межами світу: %s</string>
+    <string name="mapbox_telemetrySettings">Налаштування телеметрії</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Додаток використовує застарілу версію Карт, яка може працювати з помилками."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Компас"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Прокласти маршрут"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Карта Google"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"{0}-й рівень"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"Моє місцезнаходження"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Карти Google вимкнено або не встановлено"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Відкрити в Картах Google"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"Ваше поточне місцезнаходження"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Наблизити"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Віддалити"</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Недійсні дані панорами."</string>
+    <string name="material_clock_toggle_content_description">Виберіть ДП чи ПП</string>
+    <string name="material_hour_selection">Вибрати годину</string>
+    <string name="material_hour_suffix">%1$s год</string>
+    <string name="material_minute_selection">Виберіть хвилини</string>
+    <string name="material_minute_suffix">%1$s хв</string>
+    <string name="material_timepicker_am">дп</string>
+    <string name="material_timepicker_clock_mode_description">Перейти в режим годинника, щоб ввести час.</string>
+    <string name="material_timepicker_hour">Година</string>
+    <string name="material_timepicker_minute">Хвилина</string>
+    <string name="material_timepicker_pm">пп</string>
+    <string name="material_timepicker_select_time">Виберіть час</string>
+    <string name="material_timepicker_text_input_mode_description">Перейти в текстовий режим, щоб ввести час.</string>
+    <string name="meters">м</string>
+    <string name="miles">mi</string>
+    <string name="min">хв</string>
+    <string name="mtrl_badge_numberless_content_description">Нове сповіщення</string>
+    <string name="mtrl_chip_close_icon_content_description">Видалити %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Нових сповіщень більше ніж %1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Перейти до наступного місяця</string>
+    <string name="mtrl_picker_a11y_prev_month">Перейти до попереднього місяця</string>
+    <string name="mtrl_picker_announce_current_selection">Поточний вибір: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Виберіть дату</string>
+    <string name="mtrl_picker_date_header_unselected">Вибрана дата</string>
+    <string name="mtrl_picker_day_of_week_column_header">Стовпець із днями: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Недійсний формат.</string>
+    <string name="mtrl_picker_invalid_format_example">Приклад: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Використовувати: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Недійсний діапазон.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Перейти до %1$s року</string>
+    <string name="mtrl_picker_out_of_range">За межами діапазону: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Дата початку – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – дата завершення</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Виберіть діапазон дат</string>
+    <string name="mtrl_picker_range_header_unselected">Дата початку – дата завершення</string>
+    <string name="mtrl_picker_save">Зберегти</string>
+    <string name="mtrl_picker_text_input_date_hint">Дата</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Дата завершення</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Дата початку</string>
+    <string name="mtrl_picker_text_input_day_abbr">д</string>
+    <string name="mtrl_picker_text_input_month_abbr">м</string>
+    <string name="mtrl_picker_text_input_year_abbr">р</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Перейти в режим введення в календарі</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Натисніть, щоб вибрати день</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Перейти в режим введення тексту</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Натисніть, щоб вибрати рік</string>
+    <string name="muted">Вимкнено</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Перейти вгору"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Відкрити панель навігації"</string>
+    <string name="notification_arrival_time_format">Прибуття о %s</string>
+    <string name="password_toggle_content_description">Показувати пароль</string>
+    <string name="re_center">Центрувати</string>
+    <string name="report_feedback">Надіслати відгук</string>
+    <string name="report_problem">Повідомити про проблему</string>
+    <string name="rerouting">Зміна маршруту…</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Пошук"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="unmuted">Увімкнено</string>
+</resources>

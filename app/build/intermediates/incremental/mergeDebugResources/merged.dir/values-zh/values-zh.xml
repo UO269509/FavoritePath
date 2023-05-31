@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - 圖像 ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>，地圖資料 ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - 圖像 ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - 地圖資料 ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+</resources>

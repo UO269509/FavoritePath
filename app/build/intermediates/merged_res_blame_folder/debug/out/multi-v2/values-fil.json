@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\franc\\AndroidStudioProjects\\FavoritePath\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fil\\values-fil.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\franc\\.gradle\\caches\\transforms-3\\bf9e7a9e0920c35eac289c971c878b86\\transformed\\jetified-maps-3.1.0-beta\\res\\values-fil\\values.xml",
+                    "from": {
+                        "startLines": "42,43,44,45",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "3675,4035,4172,4431",
+                        "endColumns": "359,136,258,249",
+                        "endOffsets": "4030,4167,4426,4676"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "105,445,578,825",
+                        "endColumns": "339,132,246,237",
+                        "endOffsets": "440,573,820,1058"
+                    }
+                }
+            ]
+        }
+    ]
+}

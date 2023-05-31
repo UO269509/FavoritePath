@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="maps_compass_directions">
+        <item>"С"</item>
+        <item>"СИ"</item>
+        <item>"И"</item>
+        <item>"ЮИ"</item>
+        <item>"Ю"</item>
+        <item>"ЮЗ"</item>
+        <item>"З"</item>
+        <item>"СЗ"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"север"</item>
+        <item>"североизток"</item>
+        <item>"изток"</item>
+        <item>"югоизток"</item>
+        <item>"юг"</item>
+        <item>"югозапад"</item>
+        <item>"запад"</item>
+        <item>"северозапад"</item>
+    </string-array>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d ново известие</item>
+    <item quantity="other">%d нови известия</item>
+  </plurals>
+    <plurals name="numberOfDays">
+        <item quantity="one">дни</item>
+        <item quantity="other">дни</item>
+    </plurals>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google – Изображения ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, картографски данни ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google – Изображения ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google – Картографски данни ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Навигиране към началния екран"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Навигиране нагоре"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Още опции"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Преглед на всички"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Изберете приложение"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ИЗКЛ."</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ВКЛ."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"клавиша за интервал"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Търсете…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Изчистване на заявката"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Заявка за търсене"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Търсене"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Изпращане на заявката"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Гласово търсене"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Споделяне със:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Споделяне със: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Свиване"</string>
+    <string name="bottomsheet_action_expand_halfway">Разгъване наполовина</string>
+    <string name="channel_name">Нотификации от навигация</string>
+    <string name="character_counter_content_description">Въведени знаци: %1$d от %2$d</string>
+    <string name="character_counter_overflowed_content_description">Максималният брой знаци е надхвърлен с(ъс) %1$d от %2$d</string>
+    <string name="clear_text_end_icon_content_description">Изчистване на текста</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Активиране</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s няма да работи, освен ако не активирате услугите за Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Активиране на услугите за Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Инсталиране</string>
+    <string name="common_google_play_services_install_text">%1$s няма да се изпълнява, тъй като услугите за Google Play не са инсталирани на устройството ви.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Изтегляне на услугите за Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Наличност на услугите за Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Грешка в услугите за Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s има проблеми с услугите за Google Play. Моля, опитайте отново.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s няма да се изпълнява, тъй като услугите за Google Play не се поддържат от устройството ви.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Актуализиране</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s няма да се изпълнява, освен ако не актуализирате услугите за Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Актуализиране на услугите за Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s няма да се изпълнява без услугите за Google Play. Понастоящем те се актуализират.</string>
+    <string name="common_google_play_services_wear_update_text">Необходима е нова версия на услугите за Google Play. Скоро тя ще се актуализира автоматично.</string>
+    <string name="common_open_on_phone">Отваряне на телефона</string>
+    <string name="common_signin_button_text">Вход</string>
+    <string name="common_signin_button_text_long">Вход с Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Връзката е копирана в буферната памет"</string>
+    <string name="dropoff_dialog_negative_text">Отказ</string>
+    <string name="dropoff_dialog_positive_text">Стартиране </string>
+    <string name="dropoff_dialog_text">Желаете ли да се придвижите до следващата дестинация?</string>
+    <string name="end_navigation">Край на навигация</string>
+    <string name="error_icon_content_description">Грешка</string>
+    <string name="eta_format">%s Пристигане</string>
+    <string name="exposed_dropdown_menu_content_description">Показване на падащото меню</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копиране на връзката"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Отваряне в браузър"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Споделяне на връзката"</string>
+    <string name="feedback_confusing_instruction">Объркващо\nУказание</string>
+    <string name="feedback_missing_exit">Липсващ\nИзход</string>
+    <string name="feedback_missing_road">Липсващ\nПът</string>
+    <string name="feedback_not_allowed">Непозволено</string>
+    <string name="feedback_road_closure">Затворен\nПът</string>
+    <string name="feedback_submitted">Известието е изпратено</string>
+    <string name="feet">фута</string>
+    <string name="hr">ч</string>
+    <string name="icon_content_description">Икона за диалогов прозорец</string>
+    <string name="item_view_role_description">Раздел</string>
+    <string name="kilometers">км</string>
+    <string name="mapbox_attributionTelemetryMessage">Помагаш OpenStreetMap и Mapbox картите да станат по-добри, като предоставяш анонимни данни за потребление.</string>
+    <string name="mapbox_attributionTelemetryNegative">Не се съгласявам</string>
+    <string name="mapbox_attributionTelemetryNeutral">Повече инфо</string>
+    <string name="mapbox_attributionTelemetryPositive">Съгласявам се</string>
+    <string name="mapbox_attributionTelemetryTitle">Направи Mapbox картите по-добри.</string>
+    <string name="mapbox_attributionsDialogTitle">Mapbox Android SDK</string>
+    <string name="mapbox_attributionsIconContentDescription">Иконка функции. Активирай, за да покажеш диалог функции.</string>
+    <string name="mapbox_compassContentDescription">Компас на картата. Активирай, за да насочиш картата на север.</string>
+    <string name="mapbox_mapActionDescription">Показва карта създадена с Mapbox. Скролни с два пръста. Мащабирай с два пръста.</string>
+    <string name="mapbox_myLocationViewContentDescription">Изглед локация. Това показва местоположението ти на картата.</string>
+    <string name="mapbox_offline_error_region_definition_invalid">Предоставените OfflineRegionDefinition не пасват в границите на света: %s</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Това приложение използва неактуална версия на Карти. Възможно е да не функционира правилно."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Компас"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Изтегляне на упътвания￼"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Google Карта"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"Ниво {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"Моето местоположение"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Приложението Google Карти не е инсталирано или е деактивирано"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Отваряне в Google Карти"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"Текущото ви местоположение"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Увеличаване на мащаба"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Намаляване на мащаба"</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Невалидни данни за панорама."</string>
+    <string name="material_clock_toggle_content_description">Изберете AM или PM</string>
+    <string name="material_hour_selection">Изберете час</string>
+    <string name="material_hour_suffix">%1$s часа</string>
+    <string name="material_minute_selection">Избиране на минути</string>
+    <string name="material_minute_suffix">%1$s минути</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Превключете към режима за часовник, за да въведете часа.</string>
+    <string name="material_timepicker_hour">Час</string>
+    <string name="material_timepicker_minute">Минута</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Избор на час</string>
+    <string name="material_timepicker_text_input_mode_description">Превключете към режима за въвеждане на текст, за да въведете часа.</string>
+    <string name="meters">м</string>
+    <string name="miles">мили</string>
+    <string name="min">мин</string>
+    <string name="mtrl_badge_numberless_content_description">Ново известие</string>
+    <string name="mtrl_chip_close_icon_content_description">Премахване на %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Повече от %1$d нови известия</string>
+    <string name="mtrl_picker_a11y_next_month">Преминаване към следващия месец</string>
+    <string name="mtrl_picker_a11y_prev_month">Преминаване към предишния месец</string>
+    <string name="mtrl_picker_announce_current_selection">Текущ избор: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Избиране на дата</string>
+    <string name="mtrl_picker_date_header_unselected">Избрана дата</string>
+    <string name="mtrl_picker_day_of_week_column_header">Колона за дни: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Форматът е невалиден.</string>
+    <string name="mtrl_picker_invalid_format_example">Пример: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Използвайте: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Невалиден диапазон.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Навигиране до %1$s г.</string>
+    <string name="mtrl_picker_out_of_range">Извън диапазона: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Начална дата – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – крайна дата</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Избиране на период от време</string>
+    <string name="mtrl_picker_range_header_unselected">Начална дата – крайна дата</string>
+    <string name="mtrl_picker_save">Запазване</string>
+    <string name="mtrl_picker_text_input_date_hint">Дата</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Крайна дата</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Начална дата</string>
+    <string name="mtrl_picker_text_input_day_abbr">д</string>
+    <string name="mtrl_picker_text_input_month_abbr">м</string>
+    <string name="mtrl_picker_text_input_year_abbr">г</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Превключване към режим на въвеждане в календар</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Докоснете, за да превключите към избиране на ден</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Превключване към режим за въвеждане на текст</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Докоснете, за да превключите към избиране на година</string>
+    <string name="muted">Заглушено</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Придвижване нагоре"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Отваряне на слоя за навигация"</string>
+    <string name="notification_arrival_time_format">Пристигнахте на %s</string>
+    <string name="password_toggle_content_description">Показване на паролата</string>
+    <string name="re_center">Центрирай</string>
+    <string name="report_problem">Известяване за проблем</string>
+    <string name="rerouting">Пренасочване...</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Търсене"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="unmuted">Незаглушено</string>
+</resources>
