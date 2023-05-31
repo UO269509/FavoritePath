@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_aceptar.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_add.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_amigos.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_ayuda.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_delete.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_folder.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_logOut.xml" value="0.175" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_logout.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_menu.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_perfil.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_ruta.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-anydpi/ic_solicitudes.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable/card_shape.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable/card_shape_yellow.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable/side_nav_bar.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/drawable/viewpager_border.xml" value="0.1" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_amigos.xml" value="0.33" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_ayuda.xml" value="0.14" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_base.xml" value="0.14" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_colecciones.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_mapa.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_nota.xml" value="0.16757246376811594" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_perfil.xml" value="0.2" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_ruta.xml" value="0.25" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_share.xml" value="0.25" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_solicitudes.xml" value="0.17" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/activity_splash.xml" value="0.12" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/app_bar_main.xml" value="0.22" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/content_main.xml" value="0.11548913043478261" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_amigos.xml" value="0.16" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_ayuda.xml" value="0.22" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_colecciones.xml" value="0.25" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_inicio.xml" value="0.18" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_perfil.xml" value="0.22" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_rutas.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_slideshow.xml" value="0.11548913043478261" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/fragment_solicitudes.xml" value="0.22" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/linear_recycler_view_amigo.xml" value="0.33" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/linear_recycler_view_coleccion.xml" value="0.33" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/linear_recycler_view_ruta.xml" value="0.5" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/linear_recycler_view_share.xml" value="0.25" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/linear_recycler_view_solicitud.xml" value="0.22" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/nav_header.xml" value="0.33" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/layout/nav_header_main.xml" value="0.2" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/menu/activity_main_drawer.xml" value="0.2" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/menu/colors.xml" value="0.2" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/menu/main.xml" value="0.18" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/menu/nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/mipmap-anydpi-v26/ic_perfil.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/franc/AndroidStudioProjects/FavoritePath/app/src/main/res/mipmap-anydpi-v26/ic_perfil_round.xml" value="0.21614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/app/src/main" />
+    <option name="OPTION_SCOPE" value="private" />
+    <option name="OTHER_OPTIONS" value="-encoding utf-8 -charset utf-8" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

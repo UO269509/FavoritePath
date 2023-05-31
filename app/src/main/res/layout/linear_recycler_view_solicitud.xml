@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shape"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_xlarge">
+
+    <TextView
+        android:id="@+id/solicitudText"
+        android:layout_width="244dp"
+        android:layout_height="59dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/nombre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:maxLines="4"/>
+
+    <ImageView
+        android:id="@+id/imagenAceptar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_add"/>
+
+    <ImageView
+        android:id="@+id/imagenBorrar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_logout" />
+
+</LinearLayout>

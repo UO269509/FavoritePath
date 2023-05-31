@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_colecciones">
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="uo269509.favoritepath.ui.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_colecciones"
+        android:name="uo269509.favoritepath.ui.ColeccionesFragment"
+        android:label="@string/listado_colecciones"
+        tools:layout="@layout/fragment_colecciones" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_amigos"
+        android:name="uo269509.favoritepath.ui.AmigosFragment"
+        android:label="@string/listado_amigos"
+        tools:layout="@layout/fragment_amigos" />
+    <fragment
+        android:id="@+id/nav_solicitudes"
+        android:name="uo269509.favoritepath.ui.SolicitudesFragment"
+        android:label="@string/listado_solicitudes"
+        tools:layout="@layout/fragment_solicitudes" />
+    <fragment
+        android:id="@+id/nav_ayuda"
+        android:name="uo269509.favoritepath.ui.AyudaFragment"
+        android:label="@string/menu_ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+
+</navigation>
