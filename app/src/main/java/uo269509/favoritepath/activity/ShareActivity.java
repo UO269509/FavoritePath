@@ -1,9 +1,5 @@
 package uo269509.favoritepath.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +10,10 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -52,6 +52,11 @@ public class ShareActivity extends AppCompatActivity {
     boolean circular;
     ArrayList<GeoPoint> puntos;
 
+    /**
+     * Método para generar la actividad, obtiene las referencias de los elementos y coloca los listeners a los botones.
+     * Llama a los métodos init(), initializeAmigos(), getDatosRuta() y iniciarRuta().
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,12 +67,19 @@ public class ShareActivity extends AppCompatActivity {
         iniciarRuta();
     }
 
+    /**
+     * Método para asignarle el listener al botón de iniciar ruta.
+     */
     private void iniciarRuta(){
         iniciarRutaBtn.setOnClickListener(view -> {
             navigationRoute();
         });
     }
 
+    /**
+     * Método para compartir la ruta con otro usuario que tengas en tus amigos.
+     * @param amigo El usuario que le compartirás la ruta
+     */
     private void shareRuta(Amigo amigo){
         Map<String, Object> camposSolicitud = new HashMap<>();
         camposSolicitud.put("email",mAuth.getCurrentUser().getEmail());
@@ -77,6 +89,9 @@ public class ShareActivity extends AppCompatActivity {
         Toast.makeText(this, "Solicitud enviada con éxito",Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     private void init(){
         Intent i = getIntent();
         rutaId = i.getStringExtra("rutaId");
@@ -87,12 +102,19 @@ public class ShareActivity extends AppCompatActivity {
         iniciarRutaBtn = findViewById(R.id.iniciarRutaBtn);
     }
 
+    /**
+     * Método para configurar el elemento donde se listan los modelos.
+     */
     private void configureView() {
         amigoListView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         amigoListView.setLayoutManager(layoutManager);
     }
 
+    /**
+     * Método para añadirle todos los amigos al elemento que los mostrará.
+     * @param list La lista de amigos
+     */
     private void addAdapter(ArrayList<Amigo> list) {
         ListShareAdapter laAdapter = new ListShareAdapter(list, amigo -> {
             shareRuta(amigo);
@@ -100,6 +122,9 @@ public class ShareActivity extends AppCompatActivity {
         amigoListView.setAdapter(laAdapter);
     }
 
+    /**
+     * Método para cargar todos los amigos del usuario desde Firebase
+     */
     private void cargarDatos() {
         reference.collection("amigos").get().addOnSuccessListener(queryDocumentSnapshots -> {
             for(DocumentSnapshot doc : queryDocumentSnapshots.getDocuments()){
@@ -108,11 +133,18 @@ public class ShareActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método para eliminar al usuario de la lista una vez compartida la ruta.
+     * @param amigo El modelo que será actualizado
+     */
     public void updateAmigos(Amigo amigo) {
         amigos.remove(amigo);
         amigoListView.getAdapter().notifyDataSetChanged();
     }
 
+    /**
+     * Método para recoger los datos booleanos de la ruta
+     */
     public void getDatosRuta() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -128,6 +160,10 @@ public class ShareActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método encargado de cargar los amigos y asignárselos al elemento de la vista.
+     * Llama a los métodos cargarDatos(), configureView() y addAdapter(amigos).
+     */
     public void initializeAmigos() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -147,6 +183,10 @@ public class ShareActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método encargado de mostrar el mapa interactivo, donde coloca en el centro, la localización
+     * del usuario y se encarga de añadir los diferentes puntos para recorrer la ruta.
+     */
     private void navigationRoute(){
         NavigationRoute.Builder nav = NavigationRoute.builder(this).accessToken(getString(R.string.mapbox_access_token));
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);

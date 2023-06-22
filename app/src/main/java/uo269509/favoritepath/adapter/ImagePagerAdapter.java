@@ -18,16 +18,32 @@ public class ImagePagerAdapter extends PagerAdapter {
         mImages = images;
     }
 
+    /**
+     * Método para devolver el número de imágenes.
+     * @return Número de imágenes
+     */
     @Override
     public int getCount() {
         return mImages.size();
     }
 
+    /**
+     * Método que comprueba si hay vista que contenga el objeto.
+     * @param view La vista
+     * @param object El objeto
+     * @return
+     */
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return view == object;
     }
 
+    /**
+     * Método que instancia la imagen en el contenedor.
+     * @param container El contenedor de las imágenes
+     * @param position La posición de la imagen
+     * @return
+     */
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         ImageView imageView = new ImageView(container.getContext());
@@ -37,6 +53,12 @@ public class ImagePagerAdapter extends PagerAdapter {
         return imageView;
     }
 
+    /**
+     * Método para destruir la imagen.
+     * @param container El contenedor de las imágenes
+     * @param position La posición de la imagen
+     * @param object La imagen
+     */
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View) object);

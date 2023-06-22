@@ -70,6 +70,11 @@ public class RutaActivity extends AppCompatActivity {
     MapboxMap mapboxMap;
     ArrayList<GeoPoint> puntos = new ArrayList<>();
 
+    /**
+     * Método utilizado para volver a la pantalla anterior.
+     * Se encarga de borrar las imágenes temporales del almacenamiento
+     * en el caso de no guardar la ruta.
+     */
     @Override
     public void onBackPressed() {
         if(rutaId == null && !imagenes.isEmpty()){
@@ -81,7 +86,12 @@ public class RutaActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    // Método para recibir la respuesta de la selección de la imagen desde la galería
+    /**
+     * Método para recibir la respuesta de la selección de la imagen desde la galería
+     * @param requestCode El código de la petición
+     * @param resultCode El código del resultado
+     * @param data El intento con los datos
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -109,6 +119,11 @@ public class RutaActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Método para generar la actividad, obtiene las referencias de los elementos y coloca los listeners a los botones.
+     * Llama a los métodos init(), initializeRuta(savedInstanceState), initMapa(savedInstanceState), guardarRuta(), guardarImagenes() y iniciarRuta().
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,6 +139,9 @@ public class RutaActivity extends AppCompatActivity {
         iniciarRuta();
     }
 
+    /**
+     * Método para asignarle el listener al botón de iniciar ruta con sus respectivas funciones.
+     */
     private void iniciarRuta() {
         initRutaBtn.setOnClickListener(v -> {
             if(rutaId == null){
@@ -141,6 +159,10 @@ public class RutaActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método para asignarle el listener al botón de guardar imágenes y que abra un intento
+     * para elegir las imágenes.
+     */
     private void guardarImagenes() {
         imageBtn.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_PICK);
@@ -149,6 +171,9 @@ public class RutaActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método para asignarle el listener al botón de guardar ruta con sus respectivas funciones.
+     */
     private void guardarRuta() {
         saveBtn.setOnClickListener(v -> {
             if(rutaId != null){
@@ -159,6 +184,9 @@ public class RutaActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método para la creación de una ruta, donde se recojen todos los datos proporcionados.
+     */
     private void crearRuta(){
         String newTitulo = titulo.getText().toString().trim();
         if(newTitulo != null && !newTitulo.isEmpty()){
@@ -187,6 +215,9 @@ public class RutaActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Método para la actualización de una ruta, donde se recojen todos los datos proporcionados.
+     */
     private void actualizarRuta(boolean finish){
         String newTitulo = titulo.getText().toString().trim();
         if(newTitulo != null && !newTitulo.isEmpty()){
@@ -224,6 +255,10 @@ public class RutaActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Método encargado de cargar la ruta y asignár los datos a los elementos de la vista.
+     * @param savedInstanceState El estado de la instancia
+     */
     public void initializeRuta(Bundle savedInstanceState) {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -250,6 +285,10 @@ public class RutaActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método encargado de cargar el mapa en la vista, donde el centro será la localización del usuario.
+     * @param savedInstanceState El estado de la instancia
+     */
     private void initMapa(Bundle savedInstanceState){
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -307,6 +346,9 @@ public class RutaActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     private void init(){
         Intent i = getIntent();
         nombreColeccion = i.getStringExtra("coleccion");

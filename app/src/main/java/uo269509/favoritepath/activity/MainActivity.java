@@ -32,10 +32,10 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 import uo269509.favoritepath.R;
-import uo269509.favoritepath.ui.InicioFragment;
 import uo269509.favoritepath.ui.AmigosFragment;
 import uo269509.favoritepath.ui.AyudaFragment;
 import uo269509.favoritepath.ui.ColeccionesFragment;
+import uo269509.favoritepath.ui.InicioFragment;
 import uo269509.favoritepath.ui.PerfilFragment;
 import uo269509.favoritepath.ui.SolicitudesFragment;
 
@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
     TextView nombreView;
     TextView descripcionView;
 
+    /**
+     * Método para recibir las respuestas de las peticiones de permisos del usuario.
+     * @param requestCode El código de la petición
+     * @param permissions Los diferentes permisos
+     * @param grantResults Los resultados obtenidos
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -63,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Método utilizado para volver a la pantalla anterior..
+     */
     @Override
     public void onBackPressed() {
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.frameLayout);
@@ -76,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Método para generar la actividad, obtiene las referencias de los elementos y coloca los listeners a los botones.
+     * Llama a los métodos initialize(), navigation() y actualizarNavHeader().
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
         actualizarNavHeader();
     }
 
+    /**
+     * Método para manejar la navegación de las opciones del menú.
+     */
     private void navigation(){
         navigationView.setNavigationItemSelectedListener(item -> {
             // Aquí se maneja la selección del usuario
@@ -120,12 +137,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método para cerrar sesión en la app y volver al LoginActivity.
+     * @param view La vista
+     */
     public void logOut(View view){
         mAuth.signOut();
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Método encargado de asignar el fragmento elegido en la MainActivity y así que se pueda visualizar.
+     * @param fragment El fragmento que hay que cargar
+     */
     public void cargarFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -133,24 +158,27 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     private void initialize(){
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
-
         ActionBarDrawerToggle toogle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toogle);
         toogle.syncState();
-
         cargarFragment(new InicioFragment());
         toolbar.setTitle(R.string.app_name);
-
         mAuth = FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser().getPhotoUrl() != null)
             Picasso.get().load(mAuth.getCurrentUser().getPhotoUrl()).into((ImageView) navigationView.getHeaderView(0).findViewById(R.id.imagenPerfil));
         db = FirebaseFirestore.getInstance();
     }
 
+    /**
+     * Método encargado de cargar el nombre y la descripción del usuario en el NavHeader.
+     */
     public void actualizarNavHeader() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -175,12 +203,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Método encargado de abrir el apartado de Colecciones
+     */
     public void abrirColecciones(){
         cargarFragment(new ColeccionesFragment());
         toolbar.setTitle(R.string.listado_colecciones);
         drawerLayout.closeDrawer(GravityCompat.START);
     }
 
+    /**
+     * Método encargado de comprobar si el dispositivo del usuario tiene activados los permisos
+     * necesarios de la aplicación.
+     */
     private void checkPermisos() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
         || ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {

@@ -25,12 +25,23 @@ public class ListAmigosAdapter extends RecyclerView.Adapter<ListAmigosAdapter.Am
         this.listener = listener;
     }
 
+    /**
+     * Método para la creación de la vista del objeto
+     * @param parent El padre del objeto
+     * @param viewType (Argumento heredado)
+     * @return El contenedor con la vista cargada
+     */
     @Override
     public AmigoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.linear_recycler_view_amigo, parent, false);
         return new AmigoViewHolder(itemView);
     }
 
+    /**
+     * Método para asignarle un listener al objeto dentro del contenedor
+     * @param holder El contenedor con la vista cargada
+     * @param position La posición del objeto dentro del contenedor
+     */
     @Override
     public void onBindViewHolder(AmigoViewHolder holder, int position) {
         if(position % 2 == 0){
@@ -40,6 +51,10 @@ public class ListAmigosAdapter extends RecyclerView.Adapter<ListAmigosAdapter.Am
         holder.bindUser(amigo, listener);
     }
 
+    /**
+     * Método para devolver el número de amigos del contenedor.
+     * @return El número de amigos
+     */
     @Override
     public int getItemCount() {
         return amigos.size();

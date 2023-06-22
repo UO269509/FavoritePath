@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
     /**
      * Método para generar la actividad, obtiene las referencias de los elementos y coloca los listeners a los botones.
-     * Llama a los métodos int(), loginUser(), registerUser() y signInWithGoogle().
+     * Llama a los métodos init(), loginUser(), registerUser() y signInWithGoogle().
      * @param savedInstanceState El estado de la instancia.
      */
     @Override

@@ -39,11 +39,22 @@ public class PerfilFragment extends Fragment {
 
     public PerfilFragment() {}
 
+    /**
+     * Método para generar la actividad.
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Método para crear el fragmento y añadírselo a la actividad correspondiente.
+     * @param inflater Parámetro para inflar el fragmento en la vista
+     * @param container El contenedor de la vista
+     * @param savedInstanceState El estado de la instancia
+     * @return La vista
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.fragment_perfil, container, false);
@@ -52,6 +63,9 @@ public class PerfilFragment extends Fragment {
         return vista;
     }
 
+    /**
+     * Método para actualizar el perfil del usuario.
+     */
     private void actualizarPerfil() {
         guardarBtn.setOnClickListener(v -> {
             String nuevoNombre = nombre.getText().toString().trim();
@@ -71,11 +85,19 @@ public class PerfilFragment extends Fragment {
         });
     }
 
+    /**
+     * Método para actualizar los elementos de la vista.
+     * @param nuevoNombre El nombre nuevo del usuario
+     * @param nuevaDesc La descripción nueva del usuario
+     */
     private void updateNavHeader(String nuevoNombre, String nuevaDesc) {
         nombreView.setText(nuevoNombre);
         descripcionView.setText(nuevaDesc);
     }
 
+    /**
+     * Método encargado de guardar los atributos del usuario.
+     */
     private void updateUI() {
         reference.get().addOnSuccessListener(documentSnapshot -> {
             User user = documentSnapshot.toObject(User.class);
@@ -84,6 +106,9 @@ public class PerfilFragment extends Fragment {
         });
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     public void init(View vista){
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();

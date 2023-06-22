@@ -25,12 +25,23 @@ public class ListColeccionesAdapter extends RecyclerView.Adapter<ListColecciones
         this.listener = listener;
     }
 
+    /**
+     * Método para la creación de la vista del objeto
+     * @param parent El padre del objeto
+     * @param viewType (Argumento heredado)
+     * @return El contenedor con la vista cargada
+     */
     @Override
     public ColeccionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.linear_recycler_view_coleccion, parent, false);
         return new ColeccionViewHolder(itemView);
     }
 
+    /**
+     * Método para asignarle un listener al objeto dentro del contenedor
+     * @param holder El contenedor con la vista cargada
+     * @param position La posición del objeto dentro del contenedor
+     */
     @Override
     public void onBindViewHolder(ColeccionViewHolder holder, int position) {
         if(position % 2 == 0){
@@ -40,6 +51,10 @@ public class ListColeccionesAdapter extends RecyclerView.Adapter<ListColecciones
         holder.bindUser(coleccion, listener);
     }
 
+    /**
+     * Método para devolver el número de colecciones del contenedor.
+     * @return El número de colecciones
+     */
     @Override
     public int getItemCount() {
         return colecciones.size();

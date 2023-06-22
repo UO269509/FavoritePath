@@ -56,6 +56,12 @@ public class ColeccionesFragment extends Fragment {
 
     public ColeccionesFragment() {}
 
+    /**
+     * Método para recibir la respuesta de la creación/actualización de una ruta
+     * @param requestCode El código de la petición
+     * @param resultCode El código del resultado
+     * @param data El intento con los datos
+     */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -65,11 +71,22 @@ public class ColeccionesFragment extends Fragment {
         }
     }
 
+    /**
+     * Método para generar la actividad.
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Método para crear el fragmento y añadírselo a la actividad correspondiente.
+     * @param inflater Parámetro para inflar el fragmento en la vista
+     * @param container El contenedor de la vista
+     * @param savedInstanceState El estado de la instancia
+     * @return La vista
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         vista = inflater.inflate(R.layout.fragment_colecciones, container, false);
@@ -80,6 +97,10 @@ public class ColeccionesFragment extends Fragment {
         return vista;
     }
 
+    /**
+     * Método encargado de asignar un listener al botón de crear una ruta donde mandará
+     * un intento para abrir la actividad correspondiente.
+     */
     private void crearRuta(){
         rutaBtn.setOnClickListener(v -> {
             Intent i = new Intent(getActivity(), RutaActivity.class);
@@ -91,6 +112,9 @@ public class ColeccionesFragment extends Fragment {
         });
     }
 
+    /**
+     * Método encargado de asignar un listener al botón de crear una colección donde la creará.
+     */
     private void crearColeccion(){
         coleccionBtn.setOnClickListener(v -> {
             String newColeccion = coleccion.getText().toString().trim();
@@ -117,6 +141,10 @@ public class ColeccionesFragment extends Fragment {
         });
     }
 
+    /**
+     * Método encargado de borrar la colección de todos sus lugares.
+     * @param coleccion La colección que será borrada.
+     */
     private void borrarColeccion(Coleccion coleccion) {
         reference.collection("colecciones").document(coleccion.getTitulo()).collection("rutas").get().addOnSuccessListener(
                 querySnapshot -> {
@@ -146,11 +174,18 @@ public class ColeccionesFragment extends Fragment {
         Toast.makeText(this.getContext(), "Colección borrada con éxito",Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Método encargado de mostrar las rutas que existen la colección seleccionada.
+     * @param coleccion La colección que será mostrada
+     */
     private void abrirColeccion(Coleccion coleccion) {
         titulo = coleccion.getTitulo();
         initializeRutas();
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     private void init(View vista){
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
@@ -161,12 +196,19 @@ public class ColeccionesFragment extends Fragment {
         recyclerListView = vista.findViewById(R.id.recyclerView);
     }
 
+    /**
+     * Método para configurar el elemento donde se listan los modelos.
+     */
     private void configureView() {
         recyclerListView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerListView.setLayoutManager(layoutManager);
     }
 
+    /**
+     * Método para añadirle todas las colecciones al elemento que los mostrará.
+     * @param list La lista de colecciones
+     */
     private void addColeccionAdapter(ArrayList<Coleccion> list) {
         ListColeccionesAdapter lcAdapter = new ListColeccionesAdapter(list, (coleccion, delete) -> {
             if(delete){
@@ -178,6 +220,9 @@ public class ColeccionesFragment extends Fragment {
         recyclerListView.setAdapter(lcAdapter);
     }
 
+    /**
+     * Método para cargar todas las colecciones del usuario desde Firebase
+     */
     private void cargarDatosColecciones() {
         reference.get().addOnSuccessListener(documentSnapshot -> {
             if (documentSnapshot.exists()) {
@@ -190,11 +235,19 @@ public class ColeccionesFragment extends Fragment {
         });
     }
 
+    /**
+     * Método para eliminar la colección de la lista una vez borrada.
+     * @param coleccion El modelo que será actualizado
+     */
     public void updateColecciones(Coleccion coleccion) {
         colecciones.remove(coleccion);
         recyclerListView.getAdapter().notifyDataSetChanged();
     }
 
+    /**
+     * Método encargado de cargar las colecciones y asignárselos al elemento de la vista.
+     * Llama a los métodos cargarDatosColecciones(), configureView() y addAdapter(amigos).
+     */
     public void initializeColecciones() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -214,6 +267,10 @@ public class ColeccionesFragment extends Fragment {
         });
     }
 
+    /**
+     * Método encargado de borrar la ruta de todos sus lugares.
+     * @param ruta La colección que será borrada.
+     */
     private void borrarRuta(Ruta ruta) {
         for(String url : ruta.getImagenes()) {
             StorageReference fileRef = FirebaseStorage.getInstance().getReferenceFromUrl(url);
@@ -230,6 +287,10 @@ public class ColeccionesFragment extends Fragment {
         Toast.makeText(this.getContext(), "Ruta borrada con éxito",Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Método encargado de lanzar un intento para abrir la actividad que mostrará la ruta seleccionada.
+     * @param ruta La ruta que será mostrada
+     */
     private void abrirRuta(Ruta ruta) {
         Intent i = new Intent(getActivity(), RutaActivity.class);
         i.putExtra("coleccion",titulo);
@@ -237,11 +298,19 @@ public class ColeccionesFragment extends Fragment {
         startActivityForResult(i, RUTA);
     }
 
+    /**
+     * Método para eliminar la ruta de la lista una vez borrada.
+     * @param ruta El modelo que será actualizado
+     */
     public void updateRutas(Ruta ruta) {
         rutas.remove(ruta);
         recyclerListView.getAdapter().notifyDataSetChanged();
     }
 
+    /**
+     * Método para añadirle todas las rutas al elemento que los mostrará.
+     * @param list La lista de rutas
+     */
     private void addRutaAdapter(ArrayList<Ruta> list) {
         ListRutasAdapter lrAdapter = new ListRutasAdapter(list, (ruta, delete) -> {
             if(delete){
@@ -253,6 +322,10 @@ public class ColeccionesFragment extends Fragment {
         recyclerListView.setAdapter(lrAdapter);
     }
 
+    /**
+     * Método encargado de cargar las rutas y asignárselos al elemento de la vista.
+     * Llama a los métodos configureView() y addAdapter(amigos).
+     */
     public void initializeRutas() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
@@ -279,6 +352,9 @@ public class ColeccionesFragment extends Fragment {
         });
     }
 
+    /**
+     * Método utilizado para volver a la pantalla anterior..
+     */
     public boolean onBackPressed() {
         if(colecciones.isEmpty()){
             titulo = null;

@@ -10,6 +10,10 @@ import uo269509.favoritepath.R;
 
 public class SplashActivity extends AppCompatActivity {
 
+    /**
+     * Método para generar la actividad y hacer una pequeña espera para mostrar el logo.
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

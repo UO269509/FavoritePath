@@ -25,12 +25,23 @@ public class ListRutasAdapter extends RecyclerView.Adapter<ListRutasAdapter.Ruta
         this.listener = listener;
     }
 
+    /**
+     * Método para la creación de la vista del objeto
+     * @param parent El padre del objeto
+     * @param viewType (Argumento heredado)
+     * @return El contenedor con la vista cargada
+     */
     @Override
     public RutaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.linear_recycler_view_ruta, parent, false);
         return new RutaViewHolder(itemView);
     }
 
+    /**
+     * Método para asignarle un listener al objeto dentro del contenedor
+     * @param holder El contenedor con la vista cargada
+     * @param position La posición del objeto dentro del contenedor
+     */
     @Override
     public void onBindViewHolder(RutaViewHolder holder, int position) {
         if(position % 2 == 0){
@@ -40,6 +51,10 @@ public class ListRutasAdapter extends RecyclerView.Adapter<ListRutasAdapter.Ruta
         holder.bindUser(ruta, listener);
     }
 
+    /**
+     * Método para devolver el número de rutas del contenedor.
+     * @return El número de rutas
+     */
     @Override
     public int getItemCount() {
         return rutas.size();

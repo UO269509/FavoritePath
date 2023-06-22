@@ -41,11 +41,22 @@ public class AmigosFragment extends Fragment {
 
     public AmigosFragment() {}
 
+    /**
+     * Método para generar la actividad.
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Método para crear el fragmento y añadírselo a la actividad correspondiente.
+     * @param inflater Parámetro para inflar el fragmento en la vista
+     * @param container El contenedor de la vista
+     * @param savedInstanceState El estado de la instancia
+     * @return La vista
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.fragment_amigos, container, false);
@@ -114,6 +125,9 @@ public class AmigosFragment extends Fragment {
         Toast.makeText(this.getContext(), "Amigo borrado con éxito",Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     private void init(View vista){
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
@@ -123,12 +137,19 @@ public class AmigosFragment extends Fragment {
         amigoListView = vista.findViewById(R.id.recyclerView);
     }
 
+    /**
+     * Método para configurar el elemento donde se listan los modelos.
+     */
     private void configureView() {
         amigoListView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         amigoListView.setLayoutManager(layoutManager);
     }
 
+    /**
+     * Método para añadirle todos los amigos al elemento que los mostrará.
+     * @param list La lista de amigos
+     */
     private void addAdapter(ArrayList<Amigo> list) {
         ListAmigosAdapter laAdapter = new ListAmigosAdapter(list, amigo -> {
                 borrarAmigo(amigo);
@@ -136,6 +157,9 @@ public class AmigosFragment extends Fragment {
         amigoListView.setAdapter(laAdapter);
     }
 
+    /**
+     * Método para cargar todos los amigos del usuario desde Firebase
+     */
     private void cargarDatos() {
         reference.collection("amigos").get().addOnSuccessListener(queryDocumentSnapshots -> {
             for(DocumentSnapshot doc : queryDocumentSnapshots.getDocuments()){
@@ -144,11 +168,19 @@ public class AmigosFragment extends Fragment {
         });
     }
 
+    /**
+     * Método para eliminar al usuario de la lista una vez eliminado.
+     * @param amigo El modelo que será actualizado
+     */
     public void updateAmigos(Amigo amigo) {
         amigos.remove(amigo);
         amigoListView.getAdapter().notifyDataSetChanged();
     }
 
+    /**
+     * Método encargado de cargar los amigos y asignárselos al elemento de la vista.
+     * Llama a los métodos cargarDatos(), configureView() y addAdapter(amigos).
+     */
     public void initializeAmigos() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());

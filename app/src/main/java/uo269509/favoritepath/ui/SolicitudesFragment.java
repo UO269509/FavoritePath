@@ -38,11 +38,22 @@ public class SolicitudesFragment extends Fragment {
 
     public SolicitudesFragment() {}
 
+    /**
+     * Método para generar la actividad.
+     * @param savedInstanceState El estado de la instancia.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Método para crear el fragmento y añadírselo a la actividad correspondiente.
+     * @param inflater Parámetro para inflar el fragmento en la vista
+     * @param container El contenedor de la vista
+     * @param savedInstanceState El estado de la instancia
+     * @return La vista
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.fragment_solicitudes, container, false);
@@ -51,6 +62,9 @@ public class SolicitudesFragment extends Fragment {
         return vista;
     }
 
+    /**
+     * Método para instanciar todos los elementos necesarios en la clase.
+     */
     private void init(View vista){
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
@@ -58,6 +72,10 @@ public class SolicitudesFragment extends Fragment {
         solicitudListView = vista.findViewById(R.id.recyclerView);
     }
 
+    /**
+     * Método encargado de aceptar la solicitud de la lista del usuario.
+     * @param solicitud La solicitud que será aceptada
+     */
     private void aceptarSolicitud(Solicitud solicitud) {
         if(solicitud.getRutaId() == null) { //Aquí es la solicitud de amistad
             //añadimos a cada usuario al otro usuario como un amigo
@@ -96,6 +114,10 @@ public class SolicitudesFragment extends Fragment {
         }
     }
 
+    /**
+     * Método encargado de borrar la solicitud de la lista del usuario.
+     * @param solicitud La solicitud que será borrada
+     */
     private void borrarSolicitud(Solicitud solicitud) {
         if(solicitud.getRutaId() == null) {
             reference.collection("solicitudes").document(solicitud.getTitulo()).delete();
@@ -107,12 +129,19 @@ public class SolicitudesFragment extends Fragment {
         Toast.makeText(this.getContext(), "Solicitud eliminada",Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Método para configurar el elemento donde se listan los modelos.
+     */
     private void configureView() {
         solicitudListView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         solicitudListView.setLayoutManager(layoutManager);
     }
 
+    /**
+     * Método para añadirle todas las solicitudes al elemento que los mostrará.
+     * @param list La lista de solicitudes
+     */
     private void addAdapter(ArrayList<Solicitud> list) {
         ListSolicitudesAdapter lsAdapter = new ListSolicitudesAdapter(list, (solicitud, aceptar) -> {
             if(aceptar){
@@ -124,6 +153,9 @@ public class SolicitudesFragment extends Fragment {
         solicitudListView.setAdapter(lsAdapter);
     }
 
+    /**
+     * Método para cargar todas las solicitudes del usuario desde Firebase
+     */
     private void cargarDatos() {
         reference.collection("solicitudes").get().addOnSuccessListener(queryDocumentSnapshots -> {
                 for(DocumentSnapshot doc : queryDocumentSnapshots.getDocuments()){
@@ -132,11 +164,19 @@ public class SolicitudesFragment extends Fragment {
         });
     }
 
+    /**
+     * Método para eliminar la solicitud de la lista una vez eliminada.
+     * @param solicitud El modelo que será actualizado
+     */
     public void updateSolicitudes(Solicitud solicitud) {
         solicitudes.remove(solicitud);
         solicitudListView.getAdapter().notifyDataSetChanged();
     }
 
+    /**
+     * Método encargado de cargar las solicitudes y asignárselos al elemento de la vista.
+     * Llama a los métodos cargarDatos(), configureView() y addAdapter(solicitudes).
+     */
     public void initializeSolicitudes() {
         final Executor EXECUTOR = Executors.newSingleThreadExecutor();
         final Handler HANDLER = new Handler(Looper.getMainLooper());
