@@ -32,6 +32,7 @@ import uo269509.favoritepath.R;
 public class LoginActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 1;
+    private static final int PASSWORD_MIN = 6;
     private EditText emailText;
     private EditText passwordText;
     private Button loginButton;
@@ -73,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 firebaseAuthWithGoogle(account.getIdToken());
             } catch (ApiException e) {
-                Toast.makeText(LoginActivity.this, "Login fallido", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Login fallido, por favor, vuelva a intentarlo", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -95,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        Toast.makeText(LoginActivity.this, "Autenticación fallida", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Autenticación fallida, por favor, vuelva a intentarlo", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
@@ -118,7 +119,7 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(intent);
                             finish();
                         } else {
-                            Toast.makeText(LoginActivity.this, "Login fallido", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Login fallido, utilice datos correctos", Toast.LENGTH_SHORT).show();
                         }
                     });
         }
@@ -133,7 +134,7 @@ public class LoginActivity extends AppCompatActivity {
     private void registerUser() {
         String email = emailText.getText().toString().trim();
         String password = passwordText.getText().toString().trim();
-        if(password.length() < 6){
+        if(password.length() < PASSWORD_MIN){
             Toast.makeText(LoginActivity.this, "La contraseña debe tener 6 caracteres como mínimo", Toast.LENGTH_SHORT).show();
         }
         if(!email.isEmpty() && !password.isEmpty()) {
@@ -145,7 +146,7 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(intent);
                             finish();
                         } else {
-                            Toast.makeText(LoginActivity.this, "Registro fallido",
+                            Toast.makeText(LoginActivity.this, "Registro fallido, por favor, vuelva a intentarlo",
                                     Toast.LENGTH_SHORT).show();
                         }
                     });

@@ -211,7 +211,7 @@ public class RutaActivity extends AppCompatActivity {
             setResult(RESULT_OK, intent);
             finish();
         }else{
-            Toast.makeText(this, "Escriba un titulo",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Escriba un título",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -251,7 +251,7 @@ public class RutaActivity extends AppCompatActivity {
                 }
             });
         }else{
-            Toast.makeText(this, "Escriba un titulo",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Escriba un título",Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['getcount_0',['getCount',['../classuo269509_1_1favoritepath_1_1adapter_1_1_image_pager_adapter.html#ab765f0514219d83edc8c0ba5493ddb37',1,'uo269509::favoritepath::adapter::ImagePagerAdapter']]],
-  ['getdatosruta_1',['getDatosRuta',['../classuo269509_1_1favoritepath_1_1activity_1_1_share_activity.html#a7b5889257fa87c5edffe7dc1b33fce2d',1,'uo269509::favoritepath::activity::ShareActivity']]],
-  ['getitemcount_2',['getItemCount',['../classuo269509_1_1favoritepath_1_1adapter_1_1_list_amigos_adapter.html#a66400780db5c16e1e86f0362290baa75',1,'uo269509.favoritepath.adapter.ListAmigosAdapter.getItemCount()'],['../classuo269509_1_1favoritepath_1_1adapter_1_1_list_colecciones_adapter.html#a66786b4d85dd20e3f45fc77469ecb9c5',1,'uo269509.favoritepath.adapter.ListColeccionesAdapter.getItemCount()'],['../classuo269509_1_1favoritepath_1_1adapter_1_1_list_rutas_adapter.html#aae5ff2ab9b2afe301b401172dd520cb6',1,'uo269509.favoritepath.adapter.ListRutasAdapter.getItemCount()'],['../classuo269509_1_1favoritepath_1_1adapter_1_1_list_share_adapter.html#afd623a1b01a565cd13f804dd08d15b7f',1,'uo269509.favoritepath.adapter.ListShareAdapter.getItemCount()'],['../classuo269509_1_1favoritepath_1_1adapter_1_1_list_solicitudes_adapter.html#abde775d2bca4c24836fec4d94b5290eb',1,'uo269509.favoritepath.adapter.ListSolicitudesAdapter.getItemCount()']]]
-];
